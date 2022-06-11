@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar-fixed {
+    @apply fixed z-[99] bg-dark;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 gray;
+}
+
+.humberger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-secondary;
+}
+
+.humberger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.humberger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.humberger-active > span:nth-child(3) {
+    @apply origin-bottom-left -rotate-45;
+}
+
+.splide__slide.is-active img {
+    @apply scale-100 blur-0 shadow-xl shadow-black;
+}
+
+.timeline-active .timeline-dot {
+    @apply dark:border-primary dark:bg-primary;
+}
+
+.timeline-active h3 {
+    @apply text-white;
+}

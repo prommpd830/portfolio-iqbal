@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Splide -->
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+
+    <title>Portfolio Website | Iqbal Ramadhani</title>
+</head>
+<body class="bg-dark">
+    
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative h-[100px]">
+                <div class="px-4">
+                    <a href="#home" class="block">
+                        <img class="md:w-full w-4/5" src="dist/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="humberger" name="humberger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="humberger-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="humberger-line transition duration-300 ease-in-out"></span>
+                        <span class="humberger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-dark shadow-2xl rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="blockv lg:flex">
+                            <li class="group">
+                                <a href="#home" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#experiences" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Experiences</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <section id="home" class="pt-48 pb-32">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="w-full self-center col-span-2 px-4 md:w-4/5 text-center md:text-left">
+                    <h3 class="text-sm text-white uppercase font-semibold tracking-[.16em]">Iqbal Ramdhani <span class="block font-semibold capitalize text-white text-3xl lg:text-5xl mt-7">User Interface Designer</span></h1>
+                    <p class="text-sm text-secondary my-7">I’m a UI//UX Designer with one year experience. I make UI designs with assets that I made myself, like illustrations, icons & etc.</p>
+                    <div class="mt-10">
+                        <a href="#portfolio" class="text-base font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:shadow-sm hover:shadow-primary hover:bg-black hover:text-white transition duration-300 ease-in-out uppercase">Explore My Works!</a>
+                    </div>
+                </div>
+                <div class="w-full px-4 mt-10 md:mt-0">
+                    <div class="relative m">
+                        <img src="dist/img/hero.png" alt="Iqbal Ramdhani" class="w-64 md:mx-0 mx-auto right-0 md:w-80 shadow-2xl">
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- My Works Start -->
+    <section id="portfolio" class="py-32">
+        <div class="container">
+            <h3 class="uppercase font-bold text-secondary text-md text-center tracking-[.16em]">My Works</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
+                <div class="w-full col-span-2">
+                    <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">User Interface Design</h3>
+                </div>
+                <div class="w-full lg:mt-0 mt-7 lg:px-5">
+                    <a href="#" class="xl:text-sm md:text-md text-xs font-semibold text-primary bg-transparent border border-primary p-4 rounded-md hover:bg-primary hover:text-dark transition duration-300 ease-in-out uppercase w-full md:w-auto text-center">See MORE Ui design works<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
+                <div class="w-full mt-7 col-span-2">
+                    <img class="w-full" src="dist/img/works/works-1.png" alt="">
+                </div>
+                <div class="w-full mt-7 lg:px-5">
+                    <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Mobile Apps</a>
+                    <div class="mt-7">
+                        <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Grocery Apps</h3>
+                        <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
+                        <div class="mt-10">
+                            <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:shadow-sm hover:shadow-primary hover:bg-black hover:text-white transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
+                <div class="w-full mt-7 col-span-2">
+                    <img class="w-full" src="dist/img/works/works-2.png" alt="">
+                </div>
+                <div class="w-full mt-7 lg:px-5">
+                    <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Mobile Apps</a>
+                    <div class="mt-7">
+                        <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Golife - Online Spa</h3>
+                        <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
+                        <div class="mt-10">
+                            <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:shadow-sm hover:shadow-primary hover:bg-black hover:text-white transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
+                <div class="w-full mt-7 col-span-2">
+                    <img class="w-full" src="dist/img/works/works-3.png" alt="">
+                </div>
+                <div class="w-full mt-7 lg:px-5">
+                    <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Landing Page</a>
+                    <div class="mt-7">
+                        <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Niagahoster Landing Page</h3>
+                        <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
+                        <div class="mt-10">
+                            <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:shadow-sm hover:shadow-primary hover:bg-black hover:text-white transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- My Works End -->
+
+    <!-- Illustartion Start -->
+    <section id="illustration" class="py-32">
+        <div class="container">
+            <div class="w-full text-center">
+                <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Illustrations</h3>
+            </div>
+            <div class="splide mt-10 px-4">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide flex justify-center items-center">
+                            <img class="scale-75 blur-sm transition-all duration-75 ease-in" src="dist/img/illustration/illustration-1.png" alt="">
+                          </li>
+                          <li class="splide__slide flex justify-center items-center">
+                            <img class="scale-75 blur-sm transition-all duration-75 ease-in" src="dist/img/illustration/illustration-2.png" alt="">
+                          </li>
+                          <li class="splide__slide flex justify-center items-center">
+                            <img class="scale-75 blur-sm transition-all duration-75 ease-in" src="dist/img/illustration/illustration-3.png" alt="">
+                          </li>
+                      </ul>
+                </div>
+                <div id="arrows-slide" class="flex justify-center items-center mt-10">
+                    <a class="mx-3" href=""><i class="fa-solid fa-arrow-left text-secondary hover:text-white md:text-lg text-md prev-slide"></i></a>
+                    <a class="mx-3" href=""><i class="fa-solid fa-arrow-right text-secondary hover:text-white md:text-lg text-md next-slide"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Illustartion End -->
+
+    <!-- Experiences Start -->
+    <section id="experiences" class="py-32">
+        <div class="container">
+            <div class="flex flex-wrap lg:px-40 px-2">
+                <div class="w-full lg:w-1/2">
+                    <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl"><span class="lg:block">My</span> Experiences</h3>
+                </div>
+                <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+                    <ol class="relative border-l border-gray-200 dark:border-secondary">                  
+                        <li class="ml-4 pl-4 h-[121px] timeline-active">
+                            <div class="timeline-dot absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-secondary dark:bg-secondary"></div>
+                            <h3 class="text-lg md:text-2xl font-semibold text-gray-900 dark:text-secondary">Niagahoster <a href="" class="text-white font-semibold text-xs md:text-sm py-1 px-2 rounded-md bg-secondary bg-opacity-20 text-center">UI Designer</a></h3>
+                            <div class="mt-3">
+                                <time class="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">January 2022 - Present</time>
+                            </div>
+                        </li>
+                        <li class="ml-4 pl-4 h-[121px]">
+                            <div class="timeline-dot absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-secondary dark:bg-secondary"></div>
+                            <h3 class="text-lg md:text-2xl font-semibold text-gray-900 dark:text-secondary">Wakaspace <a href="" class="text-white font-semibold text-xs md:text-sm py-1 px-2 rounded-md bg-secondary bg-opacity-20 text-center">UI/UX Designer</a></h3>
+                            <div class="mt-3">
+                                <time class="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oktober 2021 - December 2021</time>
+                            </div>
+                        </li>
+                        <li class="ml-4 pl-4 h-[121px]">
+                            <div class="timeline-dot absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-secondary dark:bg-secondary"></div>
+                            <h3 class="text-lg md:text-2xl font-semibold text-gray-900 dark:text-secondary">PT Dua Sisi Sejahtra <a href="" class="text-white font-semibold text-xs md:text-sm py-1 px-2 rounded-md bg-secondary bg-opacity-20 text-center">UI/UX Designer</a></h3>
+                            <div class="mt-3">
+                                <time class="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Juni 2021 - Juli 2021</time>
+                            </div>
+                        </li>
+                        <li class="ml-4 pl-4 h-[121px]">
+                            <div class="timeline-dot absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-secondary dark:bg-secondary"></div>
+                            <h3 class="text-lg md:text-2xl font-semibold text-gray-900 dark:text-secondary">Unzyp Software <a href="" class="text-white font-semibold text-xs md:text-sm py-1 px-2 rounded-md bg-secondary bg-opacity-20 text-center">Internship Graphic Designer</a></h3>
+                            <div class="mt-3">
+                                <time class="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">January 2020 - March 2020</time>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experiences End -->
+
+    <!-- Lets Talk Start -->
+    <section id="contact" class="py-32">
+        <div class="container">
+            <div class="px-4">
+                <div class="flex flex-wrap px-10 py-8 bg-white rounded-md items-center">
+                    <div class="w-full md:w-1/2 text-left">
+                        <h3 class="text-dark font-bold md:text-2xl text-xl">Have an idea?</h3>
+                        <p class="text-dark md:text-md text-sm mt-3">Tell us about it. We want to work with you to create the really cool stuff.</p>
+                    </div>
+                    <div class="w-full md:w-1/2 md:text-right text-left mt-7 md:mt-0">
+                        <a href="#" class="md:text-md text-sm font-bold text-white bg-dark md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-black hover:text-white transition duration-300 ease-in-out capitalize">Lets Talk!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lets Talk End -->
+
+    <!-- Social Media Start -->
+    <section id="social-media" class="py-32">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Explore my works on social media</h3>
+                <div class="flex justify-center items-center mt-10">
+                    <a href="#" class="text-white mx-6"><img class="w-[33.6px] fill-current" src="dist/icon/facebook.svg" alt=""></a>
+                    <a href="#" class="text-white mx-6"><img class="w-[33.6px] fill-current" src="dist/icon/instagram.svg" alt=""></a>
+                    <a href="#" class="text-white mx-6"><img class="w-[33.6px] fill-current" src="dist/icon/be.svg" alt=""></a>
+                    <a href="#" class="text-white mx-6"><img class="w-[33.6px] fill-current" src="dist/icon/internet.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Social Media End -->
+
+    <!-- Footer Start -->
+    <footer id="footer" class="py-14">
+        <p class="text-center text-secondary text-sm">Copyright 2022 Design by Muhammad Iqbal Ramdhani</p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Splide -->
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
