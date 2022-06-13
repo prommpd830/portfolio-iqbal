@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="max-h-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,16 +17,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <!-- Splide -->
-    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/css/splide.min.css">
 
     <title>Portfolio Website | Iqbal Ramadhani</title>
 </head>
-<body class="bg-dark">
-    
+<body class="bg-dark relative">
+
+    <!-- Line Grid Start -->
+    <div class="container absolute top-0 w-full h-full -z-[99]">
+        <div class="grid h-screen md:grid-cols-3 grid-cols-2 w-full justify-center">
+            <div class="h-full w-full border-x border-colorline"></div>
+            <div class="h-full w-full border-x border-colorline"></div>
+            <div class="h-full w-full border-x border-colorline md:block hidden "></div>
+        </div>
+    </div>
+    <!-- Line Grid End -->
+
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="absolute top-0 left-0 w-full flex items-center bg-dark border-b border-colorline transition-all duration-100 ease-in-out md:h-[100px] h-[80px]">
         <div class="container">
-            <div class="flex items-center justify-between relative h-[100px]">
+            <div class="flex items-center justify-between relative">
                 <div class="px-4">
                     <a href="#home" class="block">
                         <img class="md:w-full w-4/5" src="dist/img/logo.png" alt="">
@@ -39,7 +49,7 @@
                         <span class="humberger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
                     
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-dark shadow-2xl rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-dark shadow-2xl rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent">
                         <ul class="blockv lg:flex">
                             <li class="group">
                                 <a href="#home" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Home</a>
@@ -257,7 +267,7 @@
     <!-- Footer End -->
 
     <!-- Splide -->
-    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.6/dist/js/splide.min.js"></script>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
