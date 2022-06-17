@@ -3,43 +3,50 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
-    height: 100%;
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
-    height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  height: 100%;
 }
 
 .navbar-fixed {
-    @apply fixed z-[99] h-[60px] md:h-[80px];
+  @apply fixed bg-dark z-[99] h-[60px] md:h-[80px];
 }
 
 .humberger-line {
-    @apply w-[30px] h-[2px] my-2 block bg-secondary;
+  @apply w-[30px] h-[2px] my-2 block bg-secondary;
 }
 
 .humberger-active > span:nth-child(1) {
-    @apply rotate-45;
+  @apply rotate-45;
 }
 
 .humberger-active > span:nth-child(2) {
-    @apply scale-0;
+  @apply scale-0;
 }
 
 .humberger-active > span:nth-child(3) {
-    @apply origin-bottom-left -rotate-45;
+  @apply origin-bottom-left -rotate-45;
 }
 
-.splide__slide.is-active img {
-    @apply scale-100 blur-0 shadow-xl shadow-black;
+#illustration .splide__slide.is-active img {
+  @apply scale-100 blur-0 shadow-xl shadow-black;
+}
+#short-movies .splide__slide img:hover {
+  box-shadow: 0px 25px 22px 6px rgba(0, 0, 0, 0.28);
 }
 
 .timeline-active .timeline-dot {
-    @apply dark:border-primary dark:bg-primary;
+  @apply dark:border-primary dark:bg-primary;
 }
 
 .timeline-active h3 {
-    @apply text-white;
+  @apply text-white;
+}
+
+#short-movies .description {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 21.35%, #000000 75%);
 }
