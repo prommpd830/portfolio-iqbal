@@ -16,6 +16,14 @@ body {
   @apply fixed bg-dark  h-[60px] md:h-[80px];
 }
 
+#nav-menu ul li.active a {
+  @apply text-primary;
+}
+
+#nav-menu ul li.active .dot-navlink {
+  @apply bg-primary block;
+}
+
 .humberger-line {
   @apply w-[30px] h-[2px] my-2 block bg-secondary;
 }

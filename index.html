@@ -28,12 +28,10 @@
     <img class="absolute top-0 right-0 -z-[99]" src="dist/img/elipse/Ellipse 4.png" alt="">
 
     <!-- Line Grid Start -->
-    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 divide-x-[.5px] divide-colorline fixed top-0 left-0 right-0 -z-10">
+    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-3 divide-x-[.5px] divide-colorline fixed top-0 left-0 right-0 -z-10">
         <div class="h-screen"></div>
         <div class="h-screen"></div>
         <div class="h-screen"></div>
-        <div class="h-screen hidden md:block"></div>
-        <div class="h-screen hidden lg:block"></div>
     </div>
     <!-- Line Grid End -->
 
@@ -46,28 +44,40 @@
                         <img class="md:w-full w-4/5" src="dist/img/logo.png" alt="">
                     </a>
                 </div>
-                <div class="flex items-center px-4">
-                    <button id="humberger" name="humberger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="humberger-line origin-top-left transition duration-300 ease-in-out"></span>
-                        <span class="humberger-line transition duration-300 ease-in-out"></span>
-                        <span class="humberger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-                    </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-dark shadow-2xl rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="#home" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Home</a>
-                            </li>
-                            <li class="group">
-                                <a href="#portfolio" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
-                            </li>
-                            <li class="group">
-                                <a href="#experiences" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Experiences</a>
-                            </li>
-                            <li class="group">
-                                <a href="#contact" class="font-bold text-secondary py-2 mx-8 flex group-hover:text-primary">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="mx-auto">
+                    <div class="flex items-center px-4">
+                        <button id="humberger" name="humberger" type="button" class="block absolute right-4 lg:hidden">
+                            <span class="humberger-line origin-top-left transition duration-300 ease-in-out"></span>
+                            <span class="humberger-line transition duration-300 ease-in-out"></span>
+                            <span class="humberger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                        </button>
+                        <nav id="nav-menu" class="hidden absolute py-5 bg-dark shadow-2xl rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent">
+                            <ul class="block lg:flex items-center">
+                                <li class="home group lg:inline-block flex items-center">
+                                    <a href="#home" class="font-semibold text-secondary py-2 mx-8 flex group-hover:text-primary uppercase">Home</a>
+                                    <div class="w-[4px] h-[4px] rounded-full bg-secondary mx-auto hidden dot-navlink"></div>
+                                </li>
+                                <li class="portfolio group lg:inline-block flex items-center">
+                                    <a href="#portfolio" class="font-semibold text-secondary py-2 mx-8 flex group-hover:text-primary uppercase">Portfolio</a>
+                                    <div class="w-[4px] h-[4px] rounded-full bg-secondary mx-auto hidden dot-navlink"></div>
+                                </li>
+                                <li class="experiences group lg:inline-block flex items-center">
+                                    <a href="#experiences" class="font-semibold text-secondary py-2 mx-8 flex group-hover:text-primary uppercase">Experiences</a>
+                                    <div class="w-[4px] h-[4px] rounded-full bg-secondary mx-auto hidden dot-navlink"></div>
+                                </li>
+                                <li class="contact group lg:inline-block flex items-center">
+                                    <a href="#contact" class="font-semibold text-secondary py-2 mx-8 flex group-hover:text-primary uppercase">Contact</a>
+                                    <div class="w-[4px] h-[4px] rounded-full bg-secondary mx-auto hidden dot-navlink"></div>
+                                </li>
+                                <li class="group lg:my-0 my-4 mx-8 flex justify-center lg:hidden">
+                                    <a href="#" class="md:text-md text-sm font-bold w-full text-primary bg-transparent border border-primary px-4 py-3 rounded-md hover:bg-primary hover:text-dark transition duration-300 ease-in-out capitalize text-center">Lets Talk!</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="text-right px-4 lg:block hidden">
+                    <a href="#" class="md:text-md text-sm font-bold w-full text-primary bg-transparent border border-primary py-3 rounded-md px-4 hover:bg-primary hover:text-dark transition duration-300 ease-in-out capitalize text-center">Lets Talk!</a>
                 </div>
             </div>
         </div>
@@ -107,47 +117,53 @@
                     <a href="#" class="xl:text-sm md:text-md text-xs font-semibold text-primary bg-transparent border border-primary p-4 rounded-md hover:bg-primary hover:text-dark transition duration-300 ease-in-out uppercase w-full md:w-auto text-center md:inline-block block">See MORE Ui design works<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
-                <div class="w-full mt-7 col-span-2">
-                    <img class="w-full" src="dist/img/works/works-1.png" alt="">
-                </div>
-                <div class="w-full mt-7 lg:px-5">
-                    <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Mobile Apps</a>
-                    <div class="mt-7">
-                        <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Grocery Apps</h3>
-                        <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
-                        <div class="mt-10">
-                            <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-[#68EC00] transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+            <div class="lg:border-y border-colorline px-4 my-7">
+                <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4">
+                    <div class="w-full lg:mt-0 mt-7 col-span-2">
+                        <img class="w-full" src="dist/img/works/works-1.png" alt="">
+                    </div>
+                    <div class="w-full lg:mt-0 mt-7 lg:px-5">
+                        <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Mobile Apps</a>
+                        <div class="mt-7">
+                            <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Grocery Apps</h3>
+                            <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
+                            <div class="mt-10">
+                                <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-[#68EC00] transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
-                <div class="w-full mt-7 col-span-2">
-                    <img class="w-full" src="dist/img/works/works-2.png" alt="">
-                </div>
-                <div class="w-full mt-7 lg:px-5">
-                    <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Mobile Apps</a>
-                    <div class="mt-7">
-                        <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Golife - Online Spa</h3>
-                        <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
-                        <div class="mt-10">
-                            <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-[#68EC00] transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+            <div class="lg:border-y border-colorline px-4 my-7">
+                <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4">
+                    <div class="w-full lg:mt-0 mt-7 col-span-2">
+                        <img class="w-full" src="dist/img/works/works-2.png" alt="">
+                    </div>
+                    <div class="w-full lg:mt-0 mt-7 lg:px-5">
+                        <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Mobile Apps</a>
+                        <div class="mt-7">
+                            <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Golife - Online Spa</h3>
+                            <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
+                            <div class="mt-10">
+                                <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-[#68EC00] transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 px-4 my-7">
-                <div class="w-full mt-7 col-span-2">
-                    <img class="w-full" src="dist/img/works/works-3.png" alt="">
-                </div>
-                <div class="w-full mt-7 lg:px-5">
-                    <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Landing Page</a>
-                    <div class="mt-7">
-                        <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Niagahoster Landing Page</h3>
-                        <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
-                        <div class="mt-10">
-                            <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-[#68EC00] transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+            <div class="lg:border-y border-colorline px-4 my-7">
+                <div class="grid grid-cols-1 lg:grid-cols-3 items-center gap-4">
+                    <div class="w-full lg:mt-0 mt-7 col-span-2">
+                        <img class="w-full" src="dist/img/works/works-3.png" alt="">
+                    </div>
+                    <div class="w-full lg:mt-0 mt-7 lg:px-5">
+                        <a href="" class="text-white font-semibold md:text-md text-sm py-2 px-3 rounded-md bg-secondary bg-opacity-20 text-center"><img class="max-w-[20px] w-full mr-1 inline" src="dist/icon/tag.png" alt=""> Landing Page</a>
+                        <div class="mt-7">
+                            <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Niagahoster Landing Page</h3>
+                            <p class="text-secondary text-md mt-7">We’ve created a unique visual system and strategy across the wide existing spectrum of visible mobile</p>
+                            <div class="mt-10">
+                                <a href="#" class="md:text-md text-sm font-bold text-dark bg-primary md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-[#68EC00] transition duration-300 ease-in-out uppercase">Read Case<i class="fa-solid fa-arrow-right md:text-lg text-md md:ml-3 ml-2"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,12 +173,12 @@
     <!-- My Works End -->
 
     <!-- Illustartion Start -->
-    <section id="illustration" class="py-32">
+    <div id="illustration" class="py-32">
         <div class="container">
             <div class="w-full text-center">
                 <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Illustrations</h3>
             </div>
-            <div class="splide mt-10 px-4">
+            <div class="splide mt-10 px-4 rounded-lg">
                 <div class="splide__track">
                       <ul class="splide__list">
                           <li class="splide__slide flex justify-center items-center rounded-lg">
@@ -182,11 +198,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Illustartion End -->
 
     <!-- Short Movies Start -->
-    <section id="short-movies" class="py-20">
+    <div id="short-movies" class="py-20">
         <div class="container">
             <div class="flex flex-wrap px-4">
                 <div class="lg:w-1/2 w-full text-left">
@@ -296,11 +312,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Short Movies End -->
 
     <!-- Experiences Start -->
-    <section id="experiences" class="py-32">
+    <section id="experiences" class="py-32 border-t border-colorline">
         <div class="container">
             <div class="flex flex-wrap lg:px-40 px-2">
                 <div class="w-full lg:w-1/2">
@@ -344,15 +360,16 @@
     <!-- Experiences End -->
 
     <!-- Lets Talk Start -->
-    <section id="contact" class="py-32">
+    <section id="contact" class="py-32 border-t border-colorline">
         <div class="container">
             <div class="px-4">
-                <div class="flex flex-wrap px-10 py-8 bg-primary rounded-md items-center" style="background: url('dist/img/lets-talk.png')">
-                    <div class="w-full md:w-1/2 text-left">
+                <div class="flex flex-wrap px-10 py-8 bg-primary rounded-md items-center relative overflow-hidden">
+                    <img class="absolute -bottom-0 right-0" src="dist/img/line-bg.png" alt="">
+                    <div class="w-full md:w-1/2 text-left z-10" z-10>
                         <h3 class="text-dark font-bold md:text-2xl text-xl">Have an idea?</h3>
                         <p class="text-dark md:text-md text-sm mt-3">Tell us about it. We want to work with you to create the really cool stuff.</p>
                     </div>
-                    <div class="w-full md:w-1/2 md:text-right text-left mt-7 md:mt-0">
+                    <div class="w-full md:w-1/2 md:text-right text-left mt-7 md:mt-0 z-10">
                         <a href="#" class="md:text-md text-sm font-bold text-white bg-dark md:py-4 md:px-8 py-3 px-6 rounded-md hover:bg-black hover:text-white transition duration-300 ease-in-out capitalize">Lets Talk!</a>
                     </div>
                 </div>
@@ -362,7 +379,7 @@
     <!-- Lets Talk End -->
 
     <!-- Social Media Start -->
-    <section id="social-media" class="py-32">
+    <div id="social-media" class="py-32 border-t border-colorline">
         <div class="container">
             <div class="text-center">
                 <h3 class="font-semibold capitalize text-white text-2xl md:text-3xl">Explore my works on social media</h3>
@@ -374,11 +391,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Social Media End -->
 
     <!-- Footer Start -->
-    <footer id="footer" class="py-14 relative">
+    <footer id="footer" class="py-20 relative border-t border-colorline">
         <p class="text-center text-secondary text-sm">Design by Muhammad Iqbal Ramdhani & Coded by <a class="text-primary" href="https://prommpd830.github.io/">Andi Muhyi Mayapada</a></p>
         <img class="absolute bottom-0 -z-[99]" src="dist/img/elipse/Ellipse 5.png" alt="">
         <img class="absolute bottom-0 -z-[99]" src="dist/img/elipse/Ellipse 6.png" alt="">

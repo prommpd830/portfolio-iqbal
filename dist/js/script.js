@@ -8,8 +8,27 @@ window.onscroll = function() {
     } else {
         header.classList.remove('navbar-fixed');
     }
+
+    // Active nav link
+    const sections = document.querySelectorAll("section");
+    const navLi = document.querySelectorAll("#nav-menu ul li");
+    var current = "";
+  
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (pageYOffset >= sectionTop - 60) {
+        current = section.getAttribute("id"); }
+    });
+  
+    navLi.forEach((li) => {
+      li.classList.remove("active");
+      if (li.classList.contains(current)) {
+        li.classList.add("active");
+      }
+    });
 };
 
+// Active link navbar
 
 // Humberger
 const humberger = document.querySelector('#humberger');
