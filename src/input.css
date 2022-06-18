@@ -13,7 +13,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed bg-dark z-[99] h-[60px] md:h-[80px];
+  @apply fixed bg-dark  h-[60px] md:h-[80px];
 }
 
 .humberger-line {

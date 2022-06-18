@@ -628,10 +628,6 @@ video {
   top: 1679px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -642,6 +638,10 @@ video {
 
 .top-full {
   top: 100%;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .bottom-5 {
@@ -662,6 +662,10 @@ video {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-\[99\] {
+  z-index: 99;
 }
 
 .col-span-2 {
@@ -1200,7 +1204,6 @@ body {
 
 .navbar-fixed {
   position: fixed;
-  z-index: 99;
   height: 60px;
   --tw-bg-opacity: 1;
   background-color: rgb(37 41 50 / var(--tw-bg-opacity));
